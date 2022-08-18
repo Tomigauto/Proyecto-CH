@@ -1,0 +1,173 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff&display=swap');
+
+.fondo{
+    top: 0;
+    display: block;
+    position: fixed;
+    background-image: url(../img/Fondo.png);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+li a{
+    text-decoration: none;
+    color:white;
+    display: inline;
+    position: absolute;
+} 
+.menu ul li{
+    padding: 3vh;
+    width: 200px;
+    list-style: none;
+    margin-bottom: 20px;
+} 
+.menu{
+    display: inline-block;
+    font-size: 30px;
+    color: white;
+    position: fixed;
+    margin-top: 20px;
+    margin-left: 20px;
+    z-index: 100;
+}
+.menu ul{
+    top: 0;
+    padding-top: 50px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-size: 20px;
+    background-color: rgba(214, 214, 214,);
+    display: none;
+    color: white;
+    border-radius: 10px;
+    left: -10px;
+    z-index: -1;
+}
+#menu{
+    position: absolute;
+    display: none;
+}
+#menu:checked  ~ ul{
+    background-color: rgba(124, 124, 124, 0.507);
+    display: block;
+    position: absolute;
+}
+#logo{
+    position: absolute;
+    width: 100%;
+    padding-top: 15vh;
+    text-align: center;
+}
+
+.datos{
+    width: 100%;
+    height: 400px;
+    overflow-y: scroll;
+    top: 40vh;
+    display: grid;
+    position: absolute;
+    justify-content: space-evenly;
+    grid-template-columns: auto auto auto ;
+    grid-template-rows: 100px 250px auto;
+    grid-gap: 10px;
+}
+.datos::-webkit-scrollbar{
+    height: 15px;
+    background-color: rgba(124, 124, 124, 0.507);
+    border-radius: 10px;
+}
+.datos::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+}
+.grid1 a img{
+    width: 100px;
+}
+.grid2{
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+.grid3 a img{
+    width: 100px;
+}
+.grid5{
+    grid-column: 2 / 3;
+    height: 0;
+}
+.grid5 img{
+    width: 200px;
+}
+.grid7{
+    grid-column: 1 / 4;
+}
+.grid7 iframe{
+    width: 100%;
+    height: 50vh;
+    border-radius: 10px;
+    border: 0;
+}
+@media screen and (max-width:450px){
+    .grid1 a img{
+        width: 50px;
+    }
+    .grid3 a img{
+        width: 50px;
+    }
+}
+@media screen and (max-height:750px){
+    #logo img{
+        width: 100px;
+        text-align: center;
+    }
+    
+}
+.mas{
+    width: 100%;
+    display: grid;
+    position: absolute;
+    grid-template-columns: auto auto auto;
+    text-align: center;
+    bottom: 15px;
+    z-index: 100;
+}
+.mas:hover{
+    transform: rotate(10px);
+}
+footer{
+    display: grid;
+    position: absolute;
+    bottom: -15vh;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+}
+footer ul li{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-bottom: 5vh;
+}
+footer ul{
+    display: grid;
+    list-style: none;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+footer ul li a{
+    display: grid;
+    position: absolute;
+    width: 22%;
+    text-decoration: solid white;
+    background-color: rgba(151, 151, 151, 0.178);
+    text-align: center;
+    border-radius: 10px;
+}
+footer ul li a:hover{
+    transform: scale(1.2);
+}

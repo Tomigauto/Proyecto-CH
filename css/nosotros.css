@@ -1,0 +1,183 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(../img/Fondo.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+.container{
+    display: grid;
+    grid-template-columns: 150px auto auto ;
+}
+header{
+    display: flex;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    display: inline-block;
+    grid-column: 1/4;
+    background-color: rgb(37, 0, 97);
+    height: 80px;
+    justify-content: center;
+    border: 0;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+}
+.logo img{
+    width: 75px;
+    margin-top: 0px;
+}
+.logo:active{
+    transform: rotatey(3000deg);
+    transition: 5000ms;
+}
+li a{
+    text-decoration: none;
+    color:white;
+    display: inline;
+    position: absolute;
+} 
+.menu ul li{
+    padding: 4vh;
+    width: 250px;
+    list-style: none;
+    margin-bottom: 10px;
+    
+} 
+.menu ul li:hover{
+    transition: 0.2s;
+    transform: scale(1.2);
+}
+.menu{
+    font-size: 30px;
+    color: white;
+    position: fixed;
+    margin-top: 18px;
+    margin-left: 20px;
+}
+.menu ul{
+    top: 55px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 20px;
+    display: none;
+    color: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    left: 0px;
+}
+#menu{
+    position: absolute;
+    display: none;
+}
+#menu:checked  ~ ul{
+    background-color: rgb(37, 0, 97);
+    display: block;
+    position: absolute;
+}
+@media screen and (max-width: 500px){
+    .instagram_desktop{
+        display: none !important;
+    }
+    nav a img{
+        width: 60px;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: 100px auto auto ;
+    }
+}
+@media screen and (min-width:500px){
+    .instagram_mobile{
+        display: none !important;
+    }
+}
+.nav{
+    grid-column: 1/2;
+    background-color: rgba(255, 255, 255, 0.237);
+}
+.nav a{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+nav .instagram_desktop img{
+    width: 150px;
+}
+nav a img{
+    width: 80px;
+}
+
+main{
+    display: grid;
+    justify-content: center;
+    grid-column: 2/4;
+    height: calc(100vh - 80px);
+    overflow-y: scroll;
+    grid-template-columns: auto 80% auto;
+    grid-template-rows: 1fr 1fr 1fr;
+
+}
+.presentacion h2{
+    font-size: 28px;
+    margin: 10px;
+}
+.presentacion p{
+    font-size: 18px;
+}
+
+main article{
+    grid-column: 2/3;
+    color: white;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.237);
+    border-radius: 10px;
+    margin: 10px;
+}
+.mapa{
+    width: 100%;
+    border-radius: 10px;
+    min-height: 300px;
+}
+.img img{
+    width: 100%;
+    max-width: 400px;
+}
+@media screen and (max-width:500px){
+    nav a img{
+        width: 50px;
+    }
+}
+footer{
+    height: 60px;
+    display: grid;
+    grid-column: 1/4;
+    grid-template-columns: auto auto auto auto;
+}
+.footer1{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin: 15px;
+    background-color: rgba(255, 255, 255, 0.237);
+    border-radius: 10px;
+
+}
+.footer1 a{
+    width: 100%;
+    text-decoration: none;
+    color: white;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 22px;
+    text-align: center;
+}
