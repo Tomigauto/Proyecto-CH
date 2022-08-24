@@ -9,7 +9,7 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="">
+    <div class="header1">
         <header>
             <nav class="menu">
                 <input type="checkbox" id="menu">
@@ -26,14 +26,18 @@
     <section id="buscar">
         <input type="search" placeholder="Buscar...">
     </section>
-    <div class="container">
-        <h2>envianos tu comentario</h2>
-        <label for="file">adjuntar archivo</label>
-        <input type="file"><br>
-        <label for="comentarios">comentarios</label><br>
-        <textarea name="comentarios" id="" cols="30" rows="5"></textarea>
-        <br>
-        <input type="submit" value="enviar">
+    <div id="comentarios" class="position-absolute  w-100">
+        <div class="row">
+            <h2 class="col-12 text-center text-white">¡Envianos tu comentario!</h2>
+        </div>
+        <div class="row  p-3 d-flex justify-content-center">
+            <textarea id="cajacomentarios" class="w-75 h-50 mw-50" name="comentarios"  placeholder="Comentarios"></textarea>
+        </div>
+        <div class="row position-absolute w-100 justify-content-center">
+            <button id="envianostuarchivo" class="col-5" style="display:block;width:120px; height:30px;" onclick="document.getElementById('getFile').click()">envianos tu archivo</button>
+            <input  type='file' id="getFile" style="display:none">
+            <input id="enviar" class="text-center col-2" type="submit" value="enviar">
+        </div>
     </div>
     <div class="footer">
         <footer>

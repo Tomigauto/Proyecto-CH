@@ -9,11 +9,7 @@ body{
     background-repeat: no-repeat;
     background-size: auto;
 }
-.container{
-    display: grid;
-    grid-template-columns: 150px auto auto ;
-    grid-template-rows: auto auto auto;
-}
+
 header{
     display: flex;
     position: fixed;
@@ -97,6 +93,30 @@ li a{
     background-color:  rgba(124, 124, 124, 0.507);
     font-size: large;
     text-decoration: none;
+    
+}
+#comentarios{
+    top: 25vh !important;
+}
+#cajacomentarios{
+    border-radius: 5px;
+    height: 100px !important;
+    max-width: 600px;
+}
+#envianostuarchivo{
+    border-radius: 5px;
+    max-width: 200px;
+    
+}
+#envianostuarchivo:hover{
+    background-color: grey;
+}
+#enviar{
+    border-radius: 5px;
+    max-width: 100px;
+}
+#enviar:hover{
+    background-color: grey;
 }
 footer{
     position: absolute;
