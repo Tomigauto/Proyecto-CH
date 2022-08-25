@@ -44,26 +44,33 @@ li a{
     position: absolute;
 } 
 .menu ul li{
-    padding: 4vh;
+    display: flex;
+    padding: 3vh;
     width: 250px;
     list-style: none;
     margin-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
 } 
 .menu ul li:hover{
     transition: 0.2s;
-    transform: scale(1.2);
+    transform: scale(1.);
+    background-color: rgba(128, 128, 128, 0.528);
+    border-radius: 5px;
+    width: 100%;
 }
 .menu{
     font-size: 30px;
     color: white;
     position: fixed;
-    margin-top: 18px;
+    margin-top: 20px;
     margin-left: 20px;
 }
 .menu ul{
     top: 55px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 20px;
+    padding-bottom: 0px;
     text-decoration: none;
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 20px;
