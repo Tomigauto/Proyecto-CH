@@ -127,11 +127,10 @@ li a{
     
 }
 .carousel-indicators{
-    bottom: ;
     position: fixed;
     z-index: -1;
 }
-@media screen and (max-height 600px){
+@media screen and (max-height: 600px){
 
 }
 .descripcion{
