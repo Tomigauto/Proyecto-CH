@@ -1,0 +1,26 @@
+{
+  "name": "tigpackage",
+  "version": "1.0.0",
+  "description": "pagina de desarrollo web",
+  "main": "index.js",
+  "scripts": {
+    "custom": "echo \"Custom scripts\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tomigauto/Proyecto-CH.git"
+  },
+  "keywords": [
+    "web",
+    "diseño",
+    "pagina",
+    "crear",
+    "sitio"
+  ],
+  "author": "Tomas Gauto <tomasignaciogauto@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tomigauto/Proyecto-CH/issues"
+  },
+  "homepage": "https://github.com/Tomigauto/Proyecto-CH#readme"
+}

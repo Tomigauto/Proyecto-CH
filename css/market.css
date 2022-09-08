@@ -1,20 +1,22 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     background-image: url(../img/Fondo.png);
     background-repeat: no-repeat;
     background-size: auto;
 }
-.container{
+
+.container {
     display: grid;
-    grid-template-columns: 150px auto auto ;
+    grid-template-columns: 150px auto auto;
     grid-template-rows: auto auto auto;
 }
-header{
+
+header {
     display: flex;
     position: fixed;
     top: 0;
@@ -26,47 +28,62 @@ header{
     justify-content: center;
     border: 0;
 }
-.logo{
-    display: flex;
+
+.logo {
+    display: none;
     justify-content: center;
 }
-.logo img{
+
+.logo img {
     width: 75px;
     margin-top: 0px;
 }
-.logo:active{
+
+.logo:active {
     transform: rotatey(3000deg);
     transition: 5000ms;
 }
-li a{
+
+li a {
     text-decoration: none;
-    color:white;
     display: inline;
     position: absolute;
-} 
-.menu ul li{
-    padding: 4vh;
+    color: white;
+}
+
+.menu ul li {
+    display: flex;
+    padding: 3vh;
     width: 250px;
     list-style: none;
     margin-bottom: 10px;
-} 
-.menu ul li:hover{
-    transition: 0.2s;
-    transform: scale(1.2);
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
 }
-.menu{
+
+.menu ul li:hover {
+    transition: 0.2s;
+    transform: scale();
+    background-color: rgba(128, 128, 128, 0.528);
+    border-radius: 5px;
+    width: 100%;
+}
+
+.menu {
     font-size: 30px;
     color: white;
     position: fixed;
-    margin-top: 18px;
+    margin-top: 20px;
     margin-left: 20px;
 }
-.menu ul{
+
+.menu ul {
     top: 55px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 20px;
+    padding-bottom: 0px;
     text-decoration: none;
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 20px;
     display: none;
     color: white;
@@ -74,40 +91,46 @@ li a{
     border-bottom-right-radius: 10px;
     left: 0px;
 }
-#menu{
+
+#menu {
     position: absolute;
     display: none;
 }
-#menu:checked  ~ ul{
-    background-color: rgb(37, 0, 97) ;
+
+#menu:checked~ul {
+    background-color: rgb(37, 0, 97);
     display: block;
     position: absolute;
 }
-#buscar{
-    position: fixed;
+
+#buscar {
+    position: absolute;
     top: 25px;
     right: 20px;
 }
-#buscar input{
+
+#buscar input {
     width: 20vw;
     max-width: 200px;
     height: 30px;
     border-radius: 5px;
     font-family: Arial, Helvetica, sans-serif;
-    background-color:  rgba(124, 124, 124, 0.507);
+    background-color: rgba(124, 124, 124, 0.507);
     font-size: large;
     text-decoration: none;
 }
-.publicaciones{
+
+.publicaciones {
     position: absolute;
     overflow-x: scroll;
     display: grid;
-    grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto  ;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
     width: 78%;
     margin-left: 11%;
-    margin-top: 40vh; 
+    margin-top: 40vh;
 }
-.publi{
+
+.publi {
     display: inline-block;
     width: 240px;
     height: 210px;
@@ -123,31 +146,35 @@ li a{
     z-index: 100;
 
 }
-.publi h2{
+
+.publi h2 {
     width: 200px;
     margin-bottom: 5px;
-    font-family: Arial, Helvetica, sans-serif;  
+    font-family: Arial, Helvetica, sans-serif;
     color: white;
     text-align: center;
     font-size: medium;
 }
-.publi img{
+
+.publi img {
     width: 200px;
     border-radius: 10px;
     z-index: 50;
 }
-.publi h3{
+
+.publi h3 {
     width: 100px;
     margin-top: 10px;
     position: absolute;
-    font-family: Arial, Helvetica, sans-serif; 
+    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     color: white;
     background-color: rgba(0, 0, 0, 0.279);
     font-size: 15px;
 
 }
-.publi input{
+
+.publi input {
     width: 100px;
     height: 30px;
     margin-top: 4px;
@@ -159,22 +186,25 @@ li a{
     color: white;
     font-size: large;
 }
-.publi input:hover{
+
+.publi input:hover {
     transform: scale(1.1);
 
 }
-.publicaciones::-webkit-scrollbar{
+
+.publicaciones::-webkit-scrollbar {
     height: 15px;
     background-color: rgba(124, 124, 124, 0.507);
     border-radius: 10px;
 
 }
-.publicaciones::-webkit-scrollbar-thumb{
+
+.publicaciones::-webkit-scrollbar-thumb {
     border-radius: 10px;
     background-color: rgb(255, 255, 255);
 }
 
-footer{
+footer {
     position: absolute;
     width: 100%;
     bottom: -60px;
@@ -183,7 +213,8 @@ footer{
     grid-column: 1/4;
     grid-template-columns: auto auto auto auto;
 }
-.footer1{
+
+.footer1 {
     display: flex;
     text-align: center;
     align-items: flex-end;
@@ -192,18 +223,21 @@ footer{
     border-radius: 10px;
     align-items: center;
 }
-.footer1 a{
+
+.footer1 a {
     width: 100%;
     text-decoration: none;
     color: white;
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 18px;
     text-align: center;
 }
-.footer1:hover{
+
+.footer1:hover {
     scale: 1.2;
 }
-.mas{
+
+.mas {
     width: 100%;
     display: grid;
     position: absolute;
@@ -212,6 +246,7 @@ footer{
     bottom: 5px;
     z-index: 100;
 }
-.mas:hover{
+
+.mas:hover {
     scale: 1.2;
 }
