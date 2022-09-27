@@ -2,216 +2,207 @@
     padding: 0
     margin: 0
     box-sizing: border-box
+    
+$letras1: black
+$fondogris: rgba(111, 111, 111, 0.204)
+$bordes: 1px solid rgba(255, 255, 255, 0)
+$header: rgb(255, 255, 255)
+$sombras: 3px 3px 5px rgba(255, 217, 0, 0.411)
+// background-color: rgb(37, 0, 97)
 
-$color1: rgba(151, 151, 151, 0.178)
 
 body
     background-image: url(../img/fondo.png)
     background-repeat: no-repeat
-    background-attachment: fixed
-    background-position: center center
-
+    background-size: cover
+    
 .container
     display: grid
-    grid-template-columns: 150px auto auto
-    grid-template-rows: auto auto auto
+    grid-template-columns: 150px auto auto 
 
 header
     display: flex
-    position: fixed
+    position: sticky
     top: 0
     width: 100%
     display: inline-block
     grid-column: 1/4
-    background-color: rgb(37, 0, 97)
+    background-color: $header
+    // background-image: url(../img/fondo2.png)
+    // background-repeat: no-repeat
+    // background-size: cover
     height: 80px
     justify-content: center
     border: 0
 
 .logo
-    display: none
-    justify-content: center
-
-.logo img
-    width: 75px
-    margin-top: 0px
-
-.logo:active
-    transform: rotatey(3000deg)
-    transition: 5000ms
-
-li a
-    text-decoration: none
-    color: white
-    display: inline
-    position: absolute
-
-.menu ul li
-    color: white
     display: flex
-    padding: 3vh
-    width: 250px
-    list-style: none
-    margin-bottom: 10px
     justify-content: center
-    align-items: center
-    border-radius: 5px
+    
+    img
+        width: 75px
+        margin-top: 0px
 
-.menu ul li:hover
-    transition: 0.2s
-    transform: scale()
-    background-color: $color1
-    border-radius: 5px
-    width: 100%
+.logo img:active
+        transform: rotatey(3600deg)
+        transition: 5000ms
 
 .menu
-    font-size: 30px
-    color: white
+    font-size: 35px
+    color: black
     position: fixed
-    margin-top: 20px
-    margin-left: 20px
-
-.menu ul
-    top: 55px
-    padding-top: 20px
-    padding-bottom: 0px
-    text-decoration: none
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif
-    font-size: 20px
-    display: none
-    color: white
-    border-bottom-left-radius: 10px
-    border-bottom-right-radius: 10px
-    left: 0px
+    margin-top: 15px
+    right: 30px
+    
+    ul li
+        width: 100%
+        list-style: none
+    ul li a
+        right: 0
+        width: 100%
+        height: 50px
+        text-align: center
+        text-decoration: none
+        color:white
+        display: flex
+        justify-content: center
+        align-items: center
+        padding: 30px
+        color: $letras1
+        
+    ul li:hover
+        background-color: $fondogris
+        border-radius: 15px
+    
+    ul
+        width: 250px
+        top: 55px
+        padding-top: 10px
+        padding-bottom: 10px
+        text-decoration: none
+        font-family: 'Poppins', sans-serif
+        font-size: 20px
+        display: none
+        color: white
+        border-bottom-left-radius: 10px
+        border-bottom-right-radius: 10px
+        left: -250px
 
 #menu
     position: absolute
     display: none
 
 #menu:checked  ~ ul
-    background-color: rgb(37, 0, 97)
+    background-color: $header
     display: block
     position: absolute
 
-#buscar
-    position: absolute
-    top: 25px
-    right: 20px
+@media screen and (max-width: 500px)
+    .instagram_desktop
+        display: none !important
+    
+    nav a img
+        width: 60px
+    
+    .container
+        display: grid
+        grid-template-columns: 100px auto auto 
+    
+@media screen and (min-width:500px)
+    .instagram_mobile
+        display: none !important
 
-#buscar input
-    width: 20vw
-    max-width: 200px
-    height: 30px
-    border-radius: 5px
-    font-family: Arial, Helvetica, sans-serif
-    background-color: $color1
-    font-size: large
-    text-decoration: none
+.nav
+    grid-column: 1/2
+    border-right: $bordes
+    background-color: $fondogris
 
-#logo
-    position: absolute
-    top: 20vh
-    width: 100%
-    text-align: center
-    z-index: -1
-
-#logo img
-    width: 150px
-
-#logo img:active
-    /* transform: rotatey(3600deg) */
-    /* transition: 5000ms */
-    transform: rotatey(990deg)
-    transition-duration: 2s
-
-@media screen and (max-height:500px)
-    #logo
-        transform: scale(0.5)
-        position: absolute
-        padding-top: 15vh
-
-    .mas
+    a
+        display: flex
         width: 100%
-        display: grid
-        position: absolute
-        grid-template-columns: auto auto auto
-        text-align: center
-        z-index: 100
-        transform: scale(0.5) translateY(50px)
+        justify-content: center
+        align-items: center
+        padding: 15px
+    
+    .instagram_desktop img
+        width: 150px
 
-@media screen and (max-width:400px)
-    footer
-        display: grid
-        position: absolute
-        bottom: -15vh
-        text-align: center
-        width: 100%
-        padding: 10px
+    a img
+        width: 80px
 
-    footer ul li
-        font-family: Arial, Helvetica, sans-serif
-        text-align: center
-        padding-bottom: 5vh
+@media screen and (max-width:500px)
+nav a img
+    width: 50px
 
-    footer ul
-        display: grid
-        list-style: none
-        grid-template-columns: 25% 25% 25% 25%
-        font-size: 10px
 
-    footer ul li a
-        display: grid
-        position: absolute
-        width: 22%
-        text-decoration: solid white
-        background-color: $color1
+.main1
+    display: grid
+    justify-content: center
+    grid-column: 2/4
+    height: calc(100vh - 80px)
+    overflow-x: hidden
+    overflow-y: scroll
+    grid-template-columns: 10% auto auto 10%
+    grid-template-rows: 1fr 1fr 1fr
+    
+    article
+        box-shadow: $sombras
+        color: white
+        font-family: 'Poppins', sans-serif
         text-align: center
         border-radius: 10px
+        margin-top: 20px
+        margin-bottom: 10px
+        margin-right: 40px 
+        margin-left: 40px 
+        border: $bordes
+        background-color: $fondogris
 
-.iniciar-grids
-    display: grid
-    grid-template-columns: auto 200px auto
+    article a
+        width: 100%
+        height: 100%
+        text-decoration: none
+        color: $letras1
+    
+    article h2
+        color: $letras1
+    
+    article h3
+        color: $letras1
+    
+    article p
+        color: $letras1
 
-.entrar
-    display: grid
-    grid-template-rows: auto auto auto
-    top: 50vh
-    position: relative
-    padding: 5px
-    margin-top: 10px
-    width: 200px
-    text-align: center
-    text-decoration: none
-    background-color: $color1
-    font-family: Arial, Helvetica, sans-serif
-    font-size: 20px
-    border-radius: 10px
-    color: white
+.art1
+    grid-column: 2/4
+.art2
+    grid-column: 2/4
+    grid-row: 2
+    display: flex
+    justify-content: center
+    align-items: center
+.art3
+    grid-row: 3
+    grid-column: 2 / 3
+.art4
+    grid-column: 3 / 4 
+.art5
+    grid-column: 2 / 3
+.art6
+    grid-column: 3 / 4
+.img img
+    width: 70px
+    max-width: 400px
 
-.entrar:hover
-    transform: scale(1.2)
-    transition: 70ms
+@media screen and (max-width:500px)
+    .art_sec
+        grid-column: 2/4 !important
 
-#buscar
-    position: fixed
-    text-decoration: none
-    top: 25px
-    right: 20px
-
-#buscar input
-    width: 20vw
-    height: 30px
-    border-radius: 5px
-    font-family: Arial, Helvetica, sans-serif
-    border-radius: 10px
-    background-color: $color1
-    text-align: center
-    color: white
+@media screen and (max-width:1000px)
+    
+    
 
 footer
-    position: absolute
-    width: 100%
-    bottom: -60px
     height: 60px
     display: grid
     grid-column: 1/4
@@ -220,27 +211,15 @@ footer
 .footer1
     display: flex
     text-align: center
-    align-items: flex-end
-    margin: 15px
-    background-color: $color1
-    border-radius: 10px
     align-items: center
-
-.footer1 a
-    width: 100%
-    text-decoration: none
-    color: white
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif
-    font-size: 18px
-    text-align: center
-
-.footer1:hover
-    scale: 0.9
-
-.mas
-    width: 100%
-    display: grid
-    position: absolute
-    grid-template-columns: auto auto auto
-    text-align: center
-    bottom: 10px
+    margin: 15px
+    background-color: $fondogris
+    border-radius: 10px
+    
+    a
+        width: 100%
+        text-decoration: none
+        color: $letras1
+        font-family: 'Poppins', sans-serif
+        font-size: 22px
+        text-align: center

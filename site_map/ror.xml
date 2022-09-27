@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:ror="http://rorweb.com/0.1/" >
+<channel>
+  <title>ROR Sitemap for https://tomasgautodesign.000webhostapp.com/</title>
+  <link>https://tomasgautodesign.000webhostapp.com/</link>
+
+<item>
+     <link>https://tomasgautodesign.000webhostapp.com/</link>
+     <title>Tomas Gauto diseño web</title>
+     <description>Crea tu pagina web para atraer nuevosn clientes a tu negocio</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>0</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://tomasgautodesign.000webhostapp.com/pages/market.html</link>
+     <title>market</title>
+     <description>market</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://tomasgautodesign.000webhostapp.com/pages/servicios.html</link>
+     <title>Servicios</title>
+     <description>Servicios</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://tomasgautodesign.000webhostapp.com/pages/nosotros.html</link>
+     <title>Nosotros</title>
+     <description>Nosotros</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://tomasgautodesign.000webhostapp.com/pages/portafolio.html</link>
+     <title>Portafolio</title>
+     <description>Portafolio</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://tomasgautodesign.000webhostapp.com/pages/atencionalcliente.html</link>
+     <title>Document</title>
+     <description>Document</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://tomasgautodesign.000webhostapp.com/pages/login.html</link>
+     <title>login</title>
+     <description>login</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://tomasgautodesign.000webhostapp.com/pages/registrarse.html</link>
+     <title>Registro</title>
+     <description>Registro</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://tomasgautodesign.000webhostapp.com/pages/visitante.html</link>
+     <title>market</title>
+     <description>market</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://tomasgautodesign.000webhostapp.com/index.html</link>
+     <title>Tomas Gauto diseño web</title>
+     <description>Crea tu pagina web para atraer nuevosn clientes a tu negocio</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+</channel>
+</rss>
+  
