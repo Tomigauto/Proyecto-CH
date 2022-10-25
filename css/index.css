@@ -5,9 +5,7 @@
 }
 
 body {
-  background-image: url(../img/fondo.png);
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: rgb(234, 234, 234);
 }
 
 .container {
@@ -26,6 +24,8 @@ header {
   height: 80px;
   justify-content: center;
   border: 0;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.188);
+  z-index: 100;
 }
 
 .logo {
@@ -66,7 +66,7 @@ header {
   color: black;
 }
 .menu ul li:hover {
-  background-color: rgba(111, 111, 111, 0.204);
+  background-color: rgba(255, 255, 255, 0.375);
   border-radius: 15px;
 }
 .menu ul {
@@ -115,7 +115,9 @@ header {
 .nav {
   grid-column: 1/2;
   border-right: 1px solid rgba(255, 255, 255, 0);
-  background-color: rgba(111, 111, 111, 0.204);
+  background-color: rgb(255, 255, 255);
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.188);
+  border-bottom-right-radius: 10px;
 }
 .nav a {
   display: flex;
@@ -144,19 +146,20 @@ nav a img {
   overflow-y: scroll;
   grid-template-columns: 10% auto auto 10%;
   grid-template-rows: 1fr 1fr 1fr;
+  z-index: 0;
 }
 .main1 article {
-  box-shadow: 3px 3px 5px rgba(255, 217, 0, 0.411);
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.188);
   color: white;
   font-family: "Poppins", sans-serif;
   text-align: center;
   border-radius: 10px;
   margin-top: 20px;
   margin-bottom: 10px;
-  margin-right: 40px;
-  margin-left: 40px;
-  border: 1px solid rgba(255, 255, 255, 0);
-  background-color: rgba(111, 111, 111, 0.204);
+  margin-right: 20px;
+  margin-left: 20px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.375);
 }
 .main1 article a {
   width: 100%;
@@ -214,10 +217,12 @@ nav a img {
   }
 }
 footer {
-  height: 60px;
+  height: 200px;
   display: grid;
   grid-column: 1/4;
   grid-template-columns: auto auto auto auto;
+  background-color: black;
+  margin-top: 10px;
 }
 
 .footer1 {
@@ -225,7 +230,7 @@ footer {
   text-align: center;
   align-items: center;
   margin: 15px;
-  background-color: rgba(111, 111, 111, 0.204);
+  background-color: rgba(255, 255, 255, 0.375);
   border-radius: 10px;
 }
 .footer1 a {
