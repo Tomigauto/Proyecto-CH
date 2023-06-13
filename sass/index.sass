@@ -11,7 +11,6 @@ $sombras: 3px 3px 3px rgba(0, 0, 0, 0.188)
 $iluminacion: -5px -5px 3px rgba(255, 255, 255, 0.507)
 $gradient: linear-gradient(90deg, #DB01FF 0%, #1DFFD6 100%)
 
-
 // body
 //     background-image: url(../img/fondo.png)
 //     background-repeat: no-repeat
@@ -20,11 +19,8 @@ $gradient: linear-gradient(90deg, #DB01FF 0%, #1DFFD6 100%)
 body
     background-image: url(../img/fondo2.0.png)
     background-repeat: no-repeat
-    background-size: cover
-
-.container
-    display: grid
-    grid-template-columns: auto auto auto 
+    background-size: 200vh
+    position: sticky
 
 header
     display: flex
@@ -57,7 +53,7 @@ header
         -webkit-background-clip: text
         -webkit-text-fill-color: transparent
         background-clip: text
-    text-fill-color: transparent
+        text-fill-color: transparent
 
 
 .logo h2:active
@@ -66,23 +62,22 @@ header
 
 .menu
     font-size: 35px
+    position: fixed
+    margin-top: 14px
+    right: 30px
+    z-index: 100
+    text-decoration: none
     background: $gradient
     -webkit-background-clip: text
     -webkit-text-fill-color: transparent
     background-clip: text
-    text-fill-color: transparent
-    position: fixed
-    margin-top: 15px
-    right: 30px
-    z-index: 100
-    text-decoration: none
+    text-fill-color: white
     
     ul li
         width: 100%
         list-style: none
 
     ul li a
-        right: 0
         width: 100%
         height: 50px
         text-align: center
@@ -90,24 +85,28 @@ header
         display: flex
         justify-content: center
         align-items: center
+        color: white !important
+        border-radius: 15px
         
     ul li:hover
-        background-color: $fondogris
+        background-color: white
         border-radius: 15px
     
     ul
         width: 250px
         top: 55px
+        margin-top: 10px
         padding-top: 10px
         padding-bottom: 10px
         text-decoration: none
         font-family: 'Poppins', sans-serif
         font-size: 20px
         display: none
-        border-bottom-left-radius: 10px
-        border-bottom-right-radius: 10px
-        left: -250px
+        left: -200px
         -webkit-text-fill-color: white
+        border-bottom-right-radius: 15px
+        border-bottom-left-radius: 15px
+
 
 #menu
     position: absolute
@@ -140,7 +139,8 @@ header
     background-color: $header
     box-shadow: $sombras
     border-bottom-right-radius: 10px
-
+    padding-top: 0
+    margin-top: 10px
 
     a
         display: flex
@@ -160,19 +160,25 @@ nav a img
     width: 50px
 
 .menuredes
+    position: absolute
+    width: 130px
+    font-size: 40px
+    text-align: center
+    font-family: 'Poppins', sans-serif
+    padding-top: 10px
     background: $gradient
     -webkit-background-clip: text
     -webkit-text-fill-color: transparent
     background-clip: text
     text-fill-color: transparent
-    font-size: 50px
-    text-align: center
-    border-top: -200px
 
 #menuredes
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent
+    background-clip: text
     display: none
     position: absolute
-    background: $gradient
+    
 
 #menuredes:checked ~  .nav
     display: block
